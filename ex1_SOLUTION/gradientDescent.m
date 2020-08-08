@@ -20,8 +20,8 @@ for iter = 1:num_iters
     % https://www.coursera.org/learn/machine-learning/supplement/U90DX/gradient-descent-for-linear-regression
     fprintf('**********\nDebug purposes:\nTheta computed from gradient descent:%f,%f',theta(1),theta(2))
     
-    theta_temp_1 = theta(1) -  alpha * (1/m) * sum( X * theta - y ) ;
-    theta_temp_2 = theta(2) -  alpha * (1/m) * sum( X(:,2) .* (X * theta - y ) ) ;
+    theta_temp_1 = theta(1) -  alpha * (1/m) * sum( X * theta - y );
+    theta_temp_2 = theta(2) -  alpha * (1/m) * sum( (X * theta - y ) .* X(:,2) );
     
     theta(1) = theta_temp_1;
     theta(2) = theta_temp_2;
