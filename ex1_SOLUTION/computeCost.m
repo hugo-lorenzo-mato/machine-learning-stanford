@@ -14,7 +14,7 @@ m = length(y); % number of training examples
 %               You should set J to the cost.
 
 
-J = (1/(2*m)) * (X*theta-y)' * (X*theta-y);
+J = 1/(2*m) * sum( (X*theta - y) .^ 2 );
 
 % =========================================================================
 
