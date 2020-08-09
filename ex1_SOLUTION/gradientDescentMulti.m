@@ -11,7 +11,7 @@ theta_temp = theta;
 for iter = 1:num_iters
     
     % https://www.coursera.org/learn/machine-learning/supplement/U90DX/gradient-descent-for-linear-regression
-    fprintf('**********\nDebug purposes:\nTheta computed from gradient descent:%f,%f',theta(1),theta(2))
+    %fprintf('**********\nDebug purposes:\nTheta computed from gradient descent:%f,%f',theta(1),theta(2))
 
     % ====================== YOUR CODE HERE ======================
     % Instructions: Perform a single gradient step on the parameter vector
@@ -41,7 +41,7 @@ for iter = 1:num_iters
     % ============================================================
     % Save the cost J in every iteration    
     J_history(iter) = computeCostMulti(X, y, theta);
-    fprintf('\nIteration: %d \nCost: %f\n **********', iter, J_history(iter))
+    %fprintf('\nIteration: %d \nCost: %f\n **********', iter, J_history(iter))
 
 end
 

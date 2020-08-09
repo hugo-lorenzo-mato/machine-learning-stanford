@@ -31,8 +31,8 @@ for column = 1:features
     mu(column) = mean(X_by_feature);
     sigma(column) = std(X_by_feature);
     X_norm(:,column) = (X_by_feature - mu(column) ) / sigma(column);
-    fprintf('\nmean(X_norm(:,%d)): %f', column, mean(X_norm(:,column)))
-    fprintf('\nstd(X_norm(:,%d)): %f', column, std(X_norm(:,column)))   
+    %fprintf('\nmean(X_norm(:,%d)): %f', column, mean(X_norm(:,column)))
+    %fprintf('\nstd(X_norm(:,%d)): %f', column, std(X_norm(:,column)))   
 end
 
 

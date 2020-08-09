@@ -18,7 +18,7 @@ for iter = 1:num_iters
     %
        
     % https://www.coursera.org/learn/machine-learning/supplement/U90DX/gradient-descent-for-linear-regression
-    fprintf('**********\nDebug purposes:\nTheta computed from gradient descent:%f,%f',theta(1),theta(2))
+    %fprintf('**********\nDebug purposes:\nTheta computed from gradient descent:%f,%f',theta(1),theta(2))
     
     theta_temp_1 = theta(1) -  alpha * (1/m) * sum( X * theta - y );
     theta_temp_2 = theta(2) -  alpha * (1/m) * sum( (X * theta - y ) .* X(:,2) );
@@ -32,7 +32,7 @@ for iter = 1:num_iters
 
     % Save the cost J in every iteration    
     J_history(iter) = computeCost(X, y, theta);
-    fprintf('\nIteration: %d \nCost: %f\n **********', iter, J_history(iter))
+    %fprintf('\nIteration: %d \nCost: %f\n **********', iter, J_history(iter))
 
 end
 
