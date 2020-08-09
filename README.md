@@ -3,6 +3,7 @@ Master Machine Learning - Programming Evaluations
 
 ## Ex1
 
+```bash
 >> submit
 == Submitting solutions | Linear Regression with Multiple Variables...
 Use token from last successful submission (hugo.lorenzomato@gmail.com)? (Y/n): Y
@@ -18,3 +19,4 @@ Use token from last successful submission (hugo.lorenzomato@gmail.com)? (Y/n): Y
 ==                            Normal Equations |   0 /   0 | Nice work!
 ==                                   --------------------------------
 ==                                             | 100 / 100 | 
+```
